@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+label {
+    font-size: 12px;
+}
+#react-select-3-placeholder {
+    font-size: 12px;
+}
+.col-lg-12 {
+    margin-top: -15px;
+}
+#react-select-3-listbox {
+    background-color: white;
+}
