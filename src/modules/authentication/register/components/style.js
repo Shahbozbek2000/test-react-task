@@ -89,6 +89,9 @@ export const RightSideCard = styled.div`
   width: 100%;
   height: calc(100% - 46px);
   overflow-y: scroll;
+  @media (max-width: 992px) {
+    height: 100%;
+  }
   .hide-password {
     position: absolute;
     right: 7%;
