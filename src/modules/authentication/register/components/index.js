@@ -16,23 +16,15 @@ import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import ButtonComponent from "../../../../components/button";
-import { authApi, facultyApi } from "../../../../services/api/pagesApi";
+import { authApi } from "../../../../services/api/pagesApi";
 import { useNavigate, Link } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
+import { useTranslation } from "react-i18next";
 
-const faculties = [
-  {
-    label: "Dasturiy injinering",
-    value: "1",
-  },
-  {
-    label: "Axborot xavfsizligi",
-    value: "2",
-  },
-];
 export default function RegisterComponent() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const {
     register,
     handleSubmit,
@@ -56,25 +48,27 @@ export default function RegisterComponent() {
   useEffect(() => {
     async function GetFaculty() {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_ROOT}api/faculty`);
-        setFaculty(res?.data)
+        const res = await axios.get(
+          `${process.env.REACT_APP_API_ROOT}api/faculty`
+        );
+        setFaculty(res?.data);
         let sortSelect = Object.values(res?.data)?.map((x, i) => {
           return {
-            label:x,
-            value: i 
-          }
-        })
-        setFaculty(sortSelect)
+            label: x,
+            value: i,
+          };
+        });
+        setFaculty(sortSelect);
       } catch (e) {
         console.log(e);
       }
     }
     GetFaculty();
   }, []);
- 
-//  console.log(faculty[keys])
+
+  //  console.log(faculty[keys])
   async function onSubmit(data) {
-    console.log(data)
+    console.log(data);
     try {
       if (!isLoading) {
         setIsLoading(true);
@@ -139,7 +133,7 @@ export default function RegisterComponent() {
                             required: {
                               value: true,
                               message:
-                                "Iltimos telefon raqamni to'g'ri kiriting kiriting!",
+                                "Iltimos foydalanuvchi nomini to'g'ri  kiriting!",
                             },
                           })}
                           error={errors?.login}
@@ -154,7 +148,7 @@ export default function RegisterComponent() {
                             required: {
                               value: true,
                               message:
-                                "Iltimos telefon raqamni to'g'ri kiriting kiriting!",
+                                "Iltimos ismingizni to'g'ri  kiriting!",
                             },
                           })}
                           error={errors?.name}
@@ -169,7 +163,7 @@ export default function RegisterComponent() {
                             required: {
                               value: true,
                               message:
-                                "Iltimos telefon raqamni to'g'ri kiriting kiriting!",
+                                "Iltimos familiyani to'g'ri  kiriting!",
                             },
                           })}
                           error={errors?.surname}
@@ -184,7 +178,7 @@ export default function RegisterComponent() {
                             required: {
                               value: true,
                               message:
-                                "Iltimos telefon raqamni to'g'ri kiriting kiriting!",
+                                "Iltimos emailni to'g'ri  kiriting!",
                             },
                           })}
                           error={errors?.email}
@@ -199,7 +193,7 @@ export default function RegisterComponent() {
                             required: {
                               value: true,
                               message:
-                                "Iltimos telefon raqamni to'g'ri kiriting kiriting!",
+                                "Iltimos telefon raqamni to'g'ri  kiriting!",
                             },
                           })}
                           error={errors?.phone}

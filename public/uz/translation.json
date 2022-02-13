@@ -1,0 +1,13 @@
+{
+    "athorization": {
+        "registration": "Registration",
+        "form": "form"
+    },
+    "validation": {
+        "login_required": "Iltimos foydalanuvchi nomini to'g'ri  kiriting!",
+        "phone_number_required": "Iltimos telefon raqamni to'g'ri  kiriting!",
+        "surname_required": "Iltimos familiyani to'g'ri  kiriting!",
+        "email_required": "Iltimos emailni to'g'ri  kiriting!",
+        "name_required": "Iltimos ismingizni to'g'ri  kiriting!"
+    }
+}
