@@ -40,22 +40,22 @@ export default function Navbar() {
           />
         </MobileIcon>
         <NavMenu onClick={handleClick} click={click}>
-          <NavLink href="#courses" style={{ paddingTop: "13px" }}>
+          <NavLink href="#modul" style={{ paddingTop: "13px" }}>
             <button className="nav-btn">Модули</button>
           </NavLink>
-          <NavLink href="#aboutUs" style={{ paddingTop: "13px" }}>
+          <NavLink href="#news" style={{ paddingTop: "13px" }}>
             <button className="nav-btn">новости</button>
           </NavLink>
           <NavLink href="#aboutUs" style={{ paddingTop: "13px" }}>
             <button className="nav-btn">ресурсы</button>
           </NavLink>
-          <NavLink href="#aboutUs" style={{ paddingTop: "13px" }}>
+          <NavLink href="#support" style={{ paddingTop: "13px" }}>
             <button className="nav-btn">Поддержка</button>
           </NavLink>
-          <NavLink href="#aboutUs" style={{ paddingTop: "13px" }}>
+          <NavLink href="#profil" style={{ paddingTop: "13px" }}>
             <button className="nav-btn">профиль</button>
           </NavLink>
-          <NavLink href="#aboutUs" style={{ paddingTop: "13px" }}>
+          <NavLink href="#language" style={{ paddingTop: "13px" }}>
             <button className="nav-btn">язык</button>
           </NavLink>
           <PhoneLink
