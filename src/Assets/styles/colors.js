@@ -12,5 +12,5 @@ export const systemColors = {
  lightGreen: "#E7F7FC;",
  errorColor: "#e54e53",
  erorShadow: "#faaeb1",
- selectBorder: "rgba(49, 57, 73, 0.1)"  
+ selectBorder: "#CFD0D7"  
 }

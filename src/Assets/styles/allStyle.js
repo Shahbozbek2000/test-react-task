@@ -58,6 +58,7 @@ export const StyleSelectAll = styled.div`
     box-shadow: inset 0 0 0 0 !important;
     border-radius: 4px;
     font-size: 12px;
+    background: #FCFCFD;
     &::placeholder {
       font-size: 12px;
     }
