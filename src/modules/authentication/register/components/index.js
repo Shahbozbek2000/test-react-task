@@ -233,7 +233,7 @@ export default function RegisterComponent() {
                           register={register("password", {
                             required: {
                               value: true,
-                              message: "Iltimos parolni qayta kiriting!",
+                              message: "Iltimos parolni kiriting!",
                             },
                           })}
                           error={errors?.password}

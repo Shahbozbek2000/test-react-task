@@ -16,6 +16,7 @@ import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import ButtonComponent from "../../../../Components/button";
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
+import toast, {Toaster} from "react-hot-toast"
 
 export default function LoginComponent() {
   const {
@@ -59,6 +60,7 @@ export default function LoginComponent() {
       }
     } catch (e) {
       console.log(e);
+      toast.error("Login yoki parol xato!")
       setIsLoading(false);
     }
   }
@@ -153,9 +155,11 @@ export default function LoginComponent() {
                     </div>
                   </div>
                 </form>
+                <Toaster/>
               </RightSideCard>
             </RightSide>
           </MainRegister>
+
         </RegisterProvider>
       ) : (
         ""
