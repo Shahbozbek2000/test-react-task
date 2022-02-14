@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const LayoutProvider = styled.div`
   width: 100%;
   height: auto;
-  min-height: 63vh;
+  min-height: 405px;
   background: #ffffff;
   box-shadow: 3.75215px 3.75215px 18.7607px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 12.5072px 12.5072px;
@@ -58,7 +58,9 @@ export const UploadImageProvider = styled.div`
   }
 `;
 
-export const UserInfoProvider = styled.div``;
+export const UserInfoProvider = styled.div`
+margin-bottom: 30px;
+`;
 
 export const UserInformation = styled.div`
 margin-left: 20px;
@@ -86,6 +88,7 @@ margin-left: 20px;
 
 export const Education = styled.div`
 margin-top: 25px;
+margin-bottom: 30px;
 p {
   font-size: 15px;
   line-height: 30px;

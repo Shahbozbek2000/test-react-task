@@ -3,8 +3,8 @@ import { systemColors } from "./colors";
 
 export const LayoutProvider = styled.div`
   width: 100%;
-  height:63vh;
-  min-height: 60vh;
+  height:auto;
+  min-height: auto;
   background: #ffffff;
   box-shadow: 3.75215px 3.75215px 18.7607px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 12.5072px 12.5072px;
