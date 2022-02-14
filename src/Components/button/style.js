@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { systemColors } from "../../assets/styles/colors";
+import { systemColors } from "../../Assets/styles/colors";
 
 export const Button = styled.button`
   width: ${(props) => props.propsWidth};

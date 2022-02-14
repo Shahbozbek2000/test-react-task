@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { LayoutProvider } from "../../../../assets/styles/allStyle";
+import { LayoutProvider } from "../../../../Assets/styles/allStyle";
 import {
   PasswordInfo,
   FormContainer,
@@ -7,8 +7,8 @@ import {
   PasswordFooter,
 } from "../changePassword/style";
 import { useForm } from "react-hook-form";
-import ButtonComponent from "../../../../components/button";
-import { FormGroup } from "../../../../components/form-group/FormGroup";
+import ButtonComponent from "../../../../Components/button";
+import { FormGroup } from "../../../../Components/form-group/FormGroup";
 import { emailApi } from "../../../../services/api/pagesApi";
 import toast, { Toaster } from "react-hot-toast";
 

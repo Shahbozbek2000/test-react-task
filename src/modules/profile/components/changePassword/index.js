@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FormGroup } from "../../../../components/form-group/FormGroup";
-import { LayoutProvider } from "../../../../assets/styles/allStyle";
+import { FormGroup } from "../../../../Components/form-group/FormGroup";
+import { LayoutProvider } from "../../../../Assets/styles/allStyle";
 import {
   PasswordInfo,
   FormContainer,
@@ -11,7 +11,7 @@ import { useForm } from "react-hook-form";
 import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import ButtonComponent from "../../../../components/button";
+import ButtonComponent from "../../../../Components/button";
 import { passwordApi } from "../../../../services/api/pagesApi";
 import toast, { Toaster } from "react-hot-toast";
 

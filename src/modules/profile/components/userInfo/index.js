@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SpinnerComponent from "../../../../components/spinner/spinner";
+import SpinnerComponent from "../../../../Components/spinner/spinner";
 import {
   LayoutProvider,
   ImageUploadProvider,
@@ -10,9 +10,9 @@ import {
   UserInformation,
   Education,
 } from "./style";
-import UserImage from "../../../../assets/images/user/user.svg";
-import UploadImage from "../../../../assets/images/user/camera.svg";
-import Pencil from "../../../../assets/images/user/pencil.svg"
+import UserImage from "../../../../Assets/images/user/user.svg";
+import UploadImage from "../../../../Assets/images/user/camera.svg";
+import Pencil from "../../../../Assets/images/user/pencil.svg"
 
 export default function UserInfo() {
   const [uploadImage, setUploadImage] = useState("");

@@ -1,5 +1,5 @@
 import { Spinner } from "react-bootstrap";
-import { systemColors } from "../../assets/styles/colors";
+import { systemColors } from "../../Assets/styles/colors";
 
 export default function SpinnerComponent() {
   return (

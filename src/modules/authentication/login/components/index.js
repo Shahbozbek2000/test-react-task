@@ -7,13 +7,13 @@ import {
   RightSide,
   RightSideCard,
 } from "../../register/components/style";
-import RegisterPicture from "../../../../assets/images/sign-up.svg";
+import RegisterPicture from "../../../../Assets/images/sign-up.svg";
 import { useForm } from "react-hook-form";
-import { FormGroup } from "../../../../components/form-group/FormGroup";
+import { FormGroup } from "../../../../Components/form-group/FormGroup";
 import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import ButtonComponent from "../../../../components/button";
+import ButtonComponent from "../../../../Components/button";
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 

@@ -7,15 +7,15 @@ import {
   RightSide,
   RightSideCard,
 } from "./style";
-import RegisterPicture from "../../../../assets/images/sign-up.svg";
+import RegisterPicture from "../../../../Assets/images/sign-up.svg";
 import { useForm, Controller } from "react-hook-form";
-import { FormGroup } from "../../../../components/form-group/FormGroup";
-import { StyleSelectAll } from "../../../../assets/styles/allStyle";
+import { FormGroup } from "../../../../Components/form-group/FormGroup";
+import { StyleSelectAll } from "../../../../Assets/styles/allStyle";
 import Select from "react-select";
 import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import ButtonComponent from "../../../../components/button";
+import ButtonComponent from "../../../../Components/button";
 import { authApi } from "../../../../services/api/pagesApi";
 import { useNavigate, Link } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";

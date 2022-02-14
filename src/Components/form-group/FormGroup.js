@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormInput } from '../../assets/styles/allStyle'
+import { FormInput } from '../../Assets/styles/allStyle'
 
 
 
