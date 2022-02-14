@@ -57,7 +57,7 @@ export default function Forward() {
               register={register("login", {
                 required: {
                   value: true,
-                  message: "Iltimos telefon raqamni to'g'ri kiriting kiriting!",
+                  message: "Iltimos emailni to'g'ri kiriting!",
                 },
               })}
               error={errors?.login}
